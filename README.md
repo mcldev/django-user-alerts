@@ -67,6 +67,12 @@ closed, so make sure Bootstrap's JS is loaded for the close animation.
 - `USER_ALERTS_STYLES` - list of `(value, label)` styles offered in the admin.
 - `USER_ALERTS_ALLOW_HTML` - default `False` (messages are escaped, newlines kept). Set `True` to render the message as trusted HTML.
 
+## Migrating from pinax-announcements
+
+With the old tables still in the database, run `python manage.py import_pinax_announcements` after `migrate`. It copies
+alerts and permanent dismissals across and is safe to re-run. Old content was HTML; set `USER_ALERTS_ALLOW_HTML = True`
+or tidy the messages.
+
 ## Development
 
 ```bash
