@@ -1,0 +1,6 @@
+{% load static %}{% if alerts %}
+<div class="user-alerts">
+  {% for alert in alerts %}{% include "user_alerts/alert.html" %}{% endfor %}
+</div>
+<script src="{% static 'user_alerts/dismiss.js' %}" defer></script>
+{% endif %}

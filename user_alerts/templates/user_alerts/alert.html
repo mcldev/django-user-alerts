@@ -1,0 +1,7 @@
+<div class="user-alert alert alert-{{ alert.style|default:'info' }}{% if alert.dismiss_url %} alert-dismissible fade show{% endif %}"
+     role="alert"{% if alert.dismiss_url %} data-dismiss-url="{{ alert.dismiss_url }}" data-csrf-token="{{ csrf_token }}"{% endif %}>
+  {% if alert.icon %}<i class="{{ alert.icon }} me-2" aria-hidden="true"></i>{% endif %}
+  <strong>{{ alert.title }}</strong>{% if alert.message %}
+  {% if allow_html %}{{ alert.message|safe }}{% else %}{{ alert.message|linebreaksbr }}{% endif %}{% endif %}
+  {% if alert.dismiss_url %}<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>{% endif %}
+</div>
