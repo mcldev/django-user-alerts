@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -7,17 +7,29 @@ name = "django-user-alerts"
 version = "0.1.0"
 description = "Simple, admin-managed alerts shown to users of a Django site, as dismissible or permanent Bootstrap alerts."
 readme = "README.md"
-license = { text = "MIT" }
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Michael Carder", email = "michael.carder@gmail.com" }]
+keywords = ["django", "alerts", "notifications", "announcements", "bootstrap"]
 requires-python = ">=3.12"
 dependencies = ["django>=4.2"]
 classifiers = [
     "Environment :: Web Environment",
     "Framework :: Django",
     "Framework :: Django :: 4.2",
-    "License :: OSI Approved :: MIT License",
+    "Framework :: Django :: 5.0",
+    "Framework :: Django :: 5.1",
+    "Framework :: Django :: 5.2",
+    "Intended Audience :: Developers",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
 ]
+
+[project.urls]
+Homepage = "https://github.com/mcldev/django-user-alerts"
+Source = "https://github.com/mcldev/django-user-alerts"
+Issues = "https://github.com/mcldev/django-user-alerts/issues"
 
 [tool.setuptools.packages.find]
 include = ["user_alerts*"]
