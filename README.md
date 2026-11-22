@@ -1,5 +1,7 @@
 # django-user-alerts
 
+[![CI](https://github.com/mcldev/django-user-alerts/actions/workflows/ci.yml/badge.svg)](https://github.com/mcldev/django-user-alerts/actions/workflows/ci.yml)
+
 Simple, admin-managed alerts for a Django site. Administrators post an alert (new service, outage, maintenance...) and
 visitors see it as a Bootstrap 5 alert, either permanent or dismissible. No CMS, no jQuery, no other dependencies.
 
