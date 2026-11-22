@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "django-user-alerts"
-version = "0.1.0"
+version = "0.1.1"
 description = "Simple, admin-managed alerts shown to users of a Django site, as dismissible or permanent Bootstrap alerts."
 readme = "README.md"
 license = "MIT"
